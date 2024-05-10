@@ -1,41 +1,98 @@
 <!DOCTYPE html>
 <head>
     <title>Registration</title>
-    <!-- <style>
-        body {
-          background-image: url('https://t3.ftcdn.net/jpg/02/46/02/78/360_F_246027822_NwEoRdOEJZ9K62jkO0Stk39yDAt919hE.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;  
-          background-size: cover;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body{
+            text-align: center;
+          }
+
+        input[type=text], input[type=password],input[type=textarea],input[type=email],input[type=date],input[type=range],input[type=tel]
+        {
+          width: 60%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid rgba(3, 99, 11, 0.317);
+          border-radius: 4px;
+          /* margin-top: 0; */
         }
-        </style> -->
+        input[type=submit]
+        {
+          background-color: #04AA6D;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        select {
+         width: 60%;
+         padding: 12px 20px;
+         border: 2px solid rgba(3, 99, 11, 0.317);
+         border-radius: 4px;
+         background-color:whitesmoke;
+        }
+        .center {
+         background-color:gainsboro ;
+         margin: auto;
+         width: 50%;
+         border: 2px solid black;
+         padding: 10px;
+        }
+        </style>
 </head>
-<body style="background-color:aliceblue">
+<body>
+<!-- <body style="background-color:aliceblue"> -->
+  <fieldset>
     <h2 style="color: crimson;"><center>SIGN-UP</center></h2>
+   <h3>Fill this form to create an account</h3> 
     <form action="Grocery.html">
-    <div>
-    <b><label for="fname">First Name:</label></b>
+    <div class="center">
+    <b><label for="fname">First Name:</label></b><br>
     <input type="text" id="fname" name="fname" placeholder="Eg:Angelin" required><br><br>
-    <b><label for="lname">Last Name:</label></b>
+    <b><label for="lname">Last Name:</label></b><br>
     <input type="text" id="lname" name="lname" placeholder="Eg:Sukirtha" required><br><br>
-    <b><label for="username">User Name:</label></b>
+    <b><label for="username">User Name:</label></b><br>
     <input type="text" id="username" name="username" placeholder="Eg:AngelinSukirtha18" required><br><br>
-    <b><label for="password">Password:</label></b>
-    <input type="password" id="password" name="password" placeholder="Eg:Angelin#12" minlength="6" maxlength="10" required><br><br></div>
-   <b><label for="phoneno">Phone Number:</label></b>
-    <input type="tel" id="phoneno" name="phoneno" placeholder="Eg:91-9876789876" required><br><br>
-    <b><label for="DOB">D.O.B:</label></b>
+    <b><label for="password">Password:</label></b><br>
+    <input type="password" id="password" name="password" placeholder="Eg:Angelin#12" minlength="6" maxlength="10" required><br><br>
+   <b><label for="country code">Country Code:</label></b><br>
+   <input type="tel" id="country code" name="country code" placeholder="91" size="2"  required><br><br>
+   <b><label for="phoneno">Phone Number:</label></b><br>
+    <input type="tel" id="phoneno" name="phoneno" placeholder="Phone Number" size="10"  required><br><br>
+    <b><label for="DOB">D.O.B:</label></b><br>
     <input type="date" id="dob" name="dob" required><br><br>
-    <b><label for="email">Email:</label></b>
+    <b><label for="email">Email:</label></b><br>
     <input type="email" id="email" placeholder="Eg:angelin2002@gmail.com"><br><br>
-    <!-- <div><b><label for="age">Age:</label></b>
+    <!-- <div><b><label for="age">Age:</label></b><br>
     <input type="number" id="age" name="age" placeholder="Age"><br><br></div> -->
     <b><label for="gender">Gender:</label></b>
     <input type="radio" id="male" name="male" value="male">Male
     <input type="radio" id="female" name="female" value="female">Female<br><br>
-    <b><label for="textarea">Message:</label></b>
-    <input id="textarea" name="textarea"><br><br></div>
+    <b><label for="quality">Quality:</label></b><br>
+    <input type="range" id="quality" name="quality" min="1" max="10"><br><br>
+    <b><label for="country">Country:</label></b><br>
+    <select id="country" name="country">
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+      <option>Korea</option>
+    </select><br><br>
+    <b><label for="state">State:</label></b><br>
+    <select id="state" name="state">
+      <option>Tamil Nadu</option>
+      <option>Mumbai</option>
+      <option>Delhi</option>
+      <option>Kerala</option>
+    </select><br><br>
+    <b><label for="textarea">Address:</label></b><br>
+    <input type="textarea" id="textarea" name="textarea" style="height:100px"><br><br>
 
     <input type="submit" value="Submit">
-</form> 
+</form> </div>
+<div>
+  <p>Already have an account?<a href="Grocery.html">Sign In</a></p>
+</div>
+</fieldset>
 </body>

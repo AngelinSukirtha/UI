@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+}
+.nav {
+    background-color: black;
+    overflow: hidden;
+  }
+
+.nav a {
+    float: left;
+    color:floralwhite ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.nav a:hover {
+    background-color:lavenderblush ;
+    color: black;
+  }
+  
+.fa{
+  float: right;
+  padding: 14px;
+  font-size: 17px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+    background:darkblue;
+    color: white;
+  }
+
+  .fa-linkedin
+  {
+    background:#007bb5;
+    color: white;
+  }
+
+.fa:hover{
+    background-color:lavenderblush ;
+    color: black;
+}
+
+.shop{
+        border: none;
+        width: 10%;
+        opacity:1;
+        background-color:crimson;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
