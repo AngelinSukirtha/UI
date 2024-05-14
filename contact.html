@@ -3,45 +3,111 @@
     <title>contact</title>
     <link rel="Stylesheet" href="StyleSheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-          background-image: url('https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?s=612x612&w=0&k=20&c=_vmYyAX0aFi-sHH8eYS-tLLNfs1ZWXnNB8M7_KWwhgg=');
-          background-repeat: no-repeat;
-          background-attachment: fixed;  
-          background-size: cover;
-        }
-        .center {
-           position: absolute;
-           top: 50%;
-           width: 100%;
-           text-align: center;
-           font-size: 18px;
-         }
-    </style>
+<style>
+body {
+        background-image: url('https://t3.ftcdn.net/jpg/03/39/06/02/360_F_339060225_w8ob8LjMJzPdEqD9UFxbE6ibcKx8dFrP.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+}
+.gridcontainer {
+        display: grid;
+        gap: 50px 50px;
+        grid-template-columns: auto auto;
+}
+
+body{
+        text-align: center;
+}
+
+input[type=text],input[type=textarea],input[type=tel]
+{
+          width: 60%;
+          padding: 12px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid lightskyblue;
+          border-radius: 4px;
+}
+input[type=submit]
+{
+          background-color:lightskyblue;
+          border: none;
+          color:black;
+          padding: 16px 32px;
+          margin: 4px 2px;
+          cursor: pointer;
+}
+
+.center {
+         /* background-image: linear-gradient(pink,rgb(102, 213, 231),white,,pink) ; */
+         margin: auto;
+         width: 80%;
+         /* border: 2px solid rgb(159, 151, 151); */
+         box-shadow:4px 4px 8px 8px grey;
+
+         padding: 20px;
+}
+/* .card {
+  box-shadow: 4px 4px 8px 0 black;
+  transition: 0.2s;
+  width: 40%;
+}*/
+
+.container {
+  padding: 10px 12px;
+}
+
+</style>
 </head>
 <body>
   <div class="nav">
-    <a href="Home.html" target="blank">Home</a>
+    <input placeholder="Search.." name="search2" class="topright">
+    <a href="Landing.html" target="blank">Home</a>
     <a href="AboutUs.html" target="blank">AboutUs</a>
     <a href="GroceryRegistration.html" target="blank">Sign-Up</a>
     <a href="Grocery.html" target="blank">Sign-In</a>
     <a href="categories.html" target="blank">Categories</a>
     <a href="contact.html" target="blank">Contact</a>
     <a href="Images.html" target="blank">Images</a>
+    <img src="C:\Users\ange3577\Downloads\logo-removebg-preview.png" alt="logo" width="5%" class="topleft">
 </div>
-<div class="topright">
-  <input type="text" placeholder="Search.." name="search2">
-</div>
-<div>
-<img src="C:\Users\ange3577\Downloads\logo-removebg-preview.png" alt="logo" width="10%"></div>
-<center><h1 style="color:cyan">CONTACT US</h1>
-    <b><i style="font-size:24px" class="fa" >&#xf095; Phone Number:</i></b>
-    <b><p style="color: azure;">91-9878987678</p></b>
-    <b><i style="font-size:24px" class="fa" >&#xf0e0; Email:</i></b>
-    <b><p style="color: azure;">grocerschoice@gmail.com</p></b>
-    <i><h2 >Address:</h2></i>
-    <b><p style="color: azure;">Anna Nagar,Madurai</p></b></center><br><br>
-   <center><h1 style="color: azure;">Location</h1>
+<br><br><br>
+  <div class="gridcontainer">
+  <form action="Landing.html">
+    <div class="center">
+      <h2>Contact Form</h2>
+    <b><label for="fname">First Name:</label></b><br>
+    <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+    <b><label for="lname">Last Name:</label></b>
+    <br>
+    <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>     
+    <b><label for="phoneno">Phone Number:</label></b>
+    <br>
+    <input type="tel" id="phoneno" name="phoneno" placeholder="Phone Number" size="10"><br><br> 
+    <b><label for="textarea">Queries:</label></b>
+    <br>
+    <input type="textarea" id="textarea" name="textarea" style="height:100px" placeholder="Write your queries..."><br><br>
+    <input type="submit" value="Submit">
+    </div>
+  </form>
+    <div class="container"><br><br><br><br>
+      <i><h1 style="color:darkmagenta">CONTACT US</h1></i>
+      <p>Our help center is fresh and always open for business.</p>
+      <p>If you can't find the answer you are looking for,</p>
+      <p> we are here to lend a hand.</p>
+      <b><i style="font-size:24px" class="fa" >&#xf095;</i></b>
+    <b><p>91-9878987678</p></b>
+    <b><i style="font-size:24px" class="fa" >&#xf0e0;</i></b>
+    <b><p>grocerschoice@gmail.com</p></b>
+    </div>
+  </div><br><br><br>
+  <center><h1>Location</h1>
     <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d37087.70453826795!2d78.07021160581536!3d9.892060229952309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3b00cf8f62059f5f%3A0x8d8d48e6255bd4c8!2s9%2C%20Aprajitha%20Complex%2C%20Sathya%20Sai%20Nagar%20Main%20Rd%2C%20opp.%20Anandhanilayam%2C%20Madurai%2C%20Tamil%20Nadu%20625011!3m2!1d9.9014843!2d78.1032693!5e0!3m2!1sen!2sin!4v1715492946011!5m2!1sen!2sin" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</center></div>
+  </center>
+<div class="footer">
+  <p>Copyright &copy; 2020 Grocer's choice</p>
+  <a href="#" class="fa fa-facebook" onclick="alert('This page is not available')"></a>
+  <a href="#" class="fa fa-instagram" onclick="alert('This page is not available')"></a><br>
+</div>
 </body>

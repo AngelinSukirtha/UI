@@ -6,38 +6,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-          background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240409/pngtree-empty-shopping-basket-on-wood-table-over-grocery-store-supermarket-blur-image_15653636.jpg');
+          background-image: url('https://t3.ftcdn.net/jpg/01/38/99/44/360_F_138994417_z9zjyI1oyS2oGgiJOlNOkt25Wwj4UhcK.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;  
           background-size: cover;
         }
+        .gridcontainer {
+          display: grid;
+          gap: 50px 50px;
+          grid-template-columns: auto auto auto;
+        }
+        .grid {
+          border: 1px solid gray; 
+          padding: 20px;
+          font-size: 30px;
+        }
     </style>
 </head>
 <body>
-<div class="bottomleft">
-<a href="#" class="fa fa-facebook" target="blank"></a>
-<a href="#" class="fa fa-instagram" target="blank"></a></div>
-<div class="bottomright">
-    <p style="color: black">Copyright &copy; 2020 Grocer's choice</p>
+<!-- <div class="bottomright"> -->
+<div class="footer">
+    <p>Copyright &copy; 2020 Grocer's choice</p>
+    <a href="#" class="fa fa-facebook" onclick="alert('This page is not available')"></a>
+        <a href="#" class="fa fa-instagram" onclick="alert('This page is not available')"></a><br>
 </div>
 <div class="nav">
-    <a href="Home.html" target="blank">Home</a>
+    <input placeholder="Search.." name="search2" class="topright">
+    <a href="Landing.html" target="blank">Home</a>
     <a href="AboutUs.html" target="blank">AboutUs</a>
     <a href="GroceryRegistration.html" target="blank">Sign-Up</a>
     <a href="Grocery.html" target="blank">Sign-In</a>
     <a href="categories.html" target="blank">Categories</a>
     <a href="contact.html" target="blank">Contact</a>
     <a href="Images.html" target="blank">Images</a>
+    <img src="C:\Users\ange3577\Downloads\logo-removebg-preview.png" alt="logo" width="5%" class="topleft">
 </div>
-<div class="topright">
-    <input type="text" placeholder="Search.." name="search2">
-</div>
-<div>
-<img src="C:\Users\ange3577\Downloads\logo-removebg-preview.png" alt="logo" width="10%"></div>
 <br><br>
-<center><h1 style="color:rgb(113, 17, 36);" >GROCER'S  CHOICE</h1></center>
-<center><i><h2 style="color:rgb(133, 19, 76) ;" >Get Fresh Groceries</h2></i></center>
-<center><i><h2 style="color:rgb(133, 19, 76) ;" >At Your Doorstep</h2></center></i><br><br>
-<center><button type="button" onclick="alert('Welcome')" class="shop">Shop Now</button></center>
-
-</body>
+<center><h1 style="color:darkred" >GROCER'S  CHOICE</h1></center>
+<center><i><h2 style="color:indigo" >Get Fresh Groceries</h2></i></center>
+<center><i><h2 style="color:indigo" >At Your Doorstep</h2></center></i><br><br>
+<center>
+    <button type="button" class="shop"><a href=Shop.html target="blank" style="color: azure;  text-decoration: none;">Shop Now</a></button>
+<!-- <form action="Shop.html" class="shop">
+    <button type="button" >Shop Now</button></form> -->
+</center><br><br><br><br><br><br>
+    <!-- <div class="bottomleft"> -->
+        <!-- <center><a href="#" class="fa fa-facebook" onclick="alert('This page is not available')"></a>
+        <a href="#" class="fa fa-instagram" onclick="alert('This page is not available')"></a><br></center> -->
+</body></html>
