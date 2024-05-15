@@ -1,58 +1,110 @@
 body{
-    margin: 0;
+   margin: 0;
 }
 .nav {
     background-color: black;
+    opacity:0.9;
     overflow: hidden;
   }
 
 .nav a {
-    float: left;
-    color:floralwhite ;
+    float: right;
+    color:white ;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
   
-.nav a:hover {
+ .nav .active,a:hover {
     background-color:lavenderblush ;
     color: black;
   }
   
 .fa{
-  float: right;
-  padding: 14px;
-  font-size: 17px;
-  width: 50px;
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
 }
 
 .fa-facebook {
+ 
     background:darkblue;
     color: white;
   }
 
-  .fa-linkedin
+  .fa-instagram
   {
-    background:#007bb5;
+    background:linear-gradient(rgb(123, 2, 147),rgb(185, 17, 141),rgba(244, 244, 4, 0.578));
     color: white;
   }
 
 .fa:hover{
-    background-color:lavenderblush ;
     color: black;
 }
 
 .shop{
-        border: none;
-        width: 10%;
-        opacity:1;
-        background-color:crimson;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        margin: 4px 2px;
-        cursor: pointer;
+    border: none;
+    width: 10%;
+    opacity:1;
+    background-color:crimson;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 10px;
 }
+
+
+/* .shop:hover{
+  background-color:blue ;
+  color: black;
+} */
+
+.bottomright
+{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 17px;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 620px;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid grey;
+  width: 5%;
+  height: 3%;
+  background: whitesmoke;
+}
+.topleft{
+  /* position: absolute; */
+  float: left;
+  top: 8px;
+  left: 10px;
+  display: inline;
+}
+.footer {
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+  /* opacity: 0.9; */
+}
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+  /* opacity: 0.9; */}
