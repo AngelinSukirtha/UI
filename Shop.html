@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title>Shop</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .gridcontainer {
           display: grid;
@@ -12,26 +14,40 @@
   width: 200px;
   text-align: center;
   background-color:rgb(193, 186, 186);
+  transition: 0.7 ease;
 }
   .card button {
-  border: none;
-  outline: 0;
-  padding: 10px;
   color: white;
   background-color:blue;
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  border: none;
+  outline: 0;
+  padding: 10px;
 }
 
  .card button:hover {
+  background-color:red;
+  color: black;
   opacity: 0.7;
 }
 </style>
 </head>
 <body>
-    <center><h1>SHOP BY CATEGORY</h1></center>
+    <div class="nav">
+        <!-- <input placeholder="Search.." name="search2" class="topright"> -->
+        <a href="AboutUs.html" target="blank">AboutUs</a>
+        <a href="GroceryRegistration.html" target="blank">Sign-Up</a>
+        <a href="Grocery.html" target="blank">Sign-In</a>
+        <a href="categories.html" target="blank">Categories</a>
+        <a href="contact.html" target="blank">Contact</a>
+        <a href="Images.html" target="blank">Images</a>
+        <a href="Landing.html" target="blank">Home</a>
+        <img src="C:\Users\ange3577\Downloads\logo-removebg-preview.png" alt="logo" width="5%" class="topleft">
+    </div>
+    <center><h1>SHOP BY ITEMS</h1></center>
     <div class="gridcontainer">
     <div class="card">
         <img src="C:\Users\ange3577\Desktop\Demo\Apple.jpg" alt="Apple" style="width: 200px; height: 200px;">
@@ -201,5 +217,52 @@
         <p>Rs.300</p>
         <p><button>Add to Cart</button></p>
     </div>
+    <div class="card">
+        <img src="C:\Users\ange3577\Desktop\Demo\wheat1.jpg" alt="Wheat" style="width: 200px; height: 200px;">
+        <h1>Wheat</h1>
+        <p>Quantity(1)</p>
+        <p>Rs.300</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="C:\Users\ange3577\Desktop\Demo\oats.jpg" alt="Oats" style="width: 200px; height: 200px;">
+        <h1>Oats</h1>
+        <p>Quantity(1)</p>
+        <p>Rs.300</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="C:\Users\ange3577\Desktop\Demo\rice.jpg" alt="Rice" style="width: 200px; height: 200px;">
+        <h1>Rice</h1>
+        <p>Quantity(1)</p>
+        <p>Rs.300</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="C:\Users\ange3577\Desktop\Demo\corn1.jpg" alt="Corn" style="width: 200px; height: 200px;">
+        <h1>Corn</h1>
+        <p>Quantity(1)</p>
+        <p>Rs.300</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="C:\Users\ange3577\Desktop\Demo\barley.jpg" alt="Barley" style="width: 200px; height: 200px;">
+        <h1>Barley</h1>
+        <p>Quantity(1)</p>
+        <p>Rs.300</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="C:\Users\ange3577\Desktop\Demo\sorghum.jpg" alt="Sorghum" style="width: 200px; height: 200px;">
+        <h1>Sorghum</h1>
+        <p>Quantity(1)</p>
+        <p>Rs.300</p>
+        <p><button>Add to Cart</button></p>
+    </div>
 </div>
+<div class="footer">
+    <p>Copyright &copy; 2020 Grocer's choice</p>
+    <a href="#" class="fa fa-facebook" onclick="alert('This page is not available')"></a>
+    <a href="#" class="fa fa-instagram" onclick="alert('This page is not available')"></a><br>
+  </div>
 </body>

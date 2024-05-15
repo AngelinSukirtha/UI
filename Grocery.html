@@ -10,35 +10,67 @@
           background-attachment: fixed;  
           background-size: cover;
         }
+        input[type=text], input[type=password],input[type=email]
+        {
+          width: 60%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid rgb(190, 224, 245);
+          border-radius: 4px;
+        }
+        input[type=submit]
+        {
+          background-color:rgb(137, 182, 210);
+          border: none;
+          color:black;
+          padding: 16px 32px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        select {
+         width: 60%;
+         padding: 12px 20px;
+         border: 2px solid rgba(3, 99, 11, 0.317);
+         border-radius: 4px;
+         background-color:whitesmoke;
+        }
+        .center {
+          text-align: center;
+          margin: auto;
+         width: 40%;
+         box-shadow:4px 4px 8px 8px grey;
+         padding: 20px;
+        }
         </style>
 </head>
-<div class="footer">
-  <p>Copyright &copy; 2020 Grocer's choice</p>
-  <a href="#" class="fa fa-facebook" onclick="alert('This page is not available')"></a>
-  <a href="#" class="fa fa-instagram" onclick="alert('This page is not available')"></a><br>
-</div>
 <div class="nav">
-  <input placeholder="Search.." name="search2" class="topright">
-  <a href="Landing.html" target="blank">Home</a>
+  <!-- <input placeholder="Search.." name="search2" class="topright"> -->
   <a href="AboutUs.html" target="blank">AboutUs</a>
   <a href="GroceryRegistration.html" target="blank">Sign-Up</a>
   <a href="Grocery.html" target="blank">Sign-In</a>
   <a href="categories.html" target="blank">Categories</a>
   <a href="contact.html" target="blank">Contact</a>
   <a href="Images.html" target="blank">Images</a>
+  <a href="Landing.html" target="blank">Home</a>
   <img src="C:\Users\ange3577\Downloads\logo-removebg-preview.png" alt="logo" width="5%" class="topleft">
 </div>
 <body style="background-color:aliceblue"> 
     <h2><center>WELCOME TO GROCER'S CHOICE</center></h2>
     <h3 style="color: crimson;"><center>LOGIN</center></h3>
-    <form action="Landing.html"><center>
-        <b><label for="name">Name:</label></b>
-        <input type="text" id="name" name="name" placeholder="Angelin"><br><br>
-        <b><label for="password">Password:</label></b>
-        <input type="password" id="password" name="password" placeholder="Angelin#12" minlength="6" maxlength="10"><br><br>
-        <b><label for="phoneno">Phone Number:</label></b>
-        <input type="tel" id="phoneno" name="phoneno" placeholder="91" size="2"  required>
-        <input type="tel" id="phoneno" name="phoneno" placeholder="9876545678" size="10"  required><br><br>
-        <input type="submit" value="Submit"></center>
-</form> 
+    <form action="Landing.html">
+      <div class="center">
+      <b><label for="username">User Name:</label></b><br>
+    <input type="text" id="username" name="username" placeholder="Eg:AngelinSukirtha18" required><br><br>
+    <b><label for="password">Password:</label></b><br>
+    <input type="password" id="password" name="password" placeholder="Eg:Angelin#12" minlength="6" maxlength="10" required><br><br>
+    <b><label for="email">Email:</label></b><br>
+    <input type="email" id="email" placeholder="Eg:angelin2002@gmail.com"><br><br>
+    <input type="submit" value="Submit">
+  </form> </div><br><br><br><br><br><br><br><br>
+<div class="footer">
+  <p>Copyright &copy; 2020 Grocer's choice</p>
+  <a href="#" class="fa fa-facebook" onclick="alert('This page is not available')"></a>
+  <a href="#" class="fa fa-instagram" onclick="alert('This page is not available')"></a><br>
+</div>
 </body>
